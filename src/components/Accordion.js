@@ -33,7 +33,7 @@ function Accordion({ items }) {
           className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
           onClick={() => handleClick(index)}
         >
-          {item.label}
+          {item.label}``
           {icon}
         </div>
         {isExpanded && <div className="border-b p-5">{item.content}</div>}
