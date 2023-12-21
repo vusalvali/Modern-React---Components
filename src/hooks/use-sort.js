@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function useSort(data, config) {
-    const [sortOrder, setSortOrder] = useState(null);
+  const [sortOrder, setSortOrder] = useState(null);
   const [sortBy, setSortBy] = useState(null);
 
   const setSortColumn = (label) => {
@@ -44,15 +44,12 @@ function useSort(data, config) {
     });
   }
 
-return {
+  return {
     sortOrder,
     sortBy,
     sortedData,
-    setSortColumn
-    
-
-}
-
+    setSortColumn,
+  };
 }
 
 export default useSort;
